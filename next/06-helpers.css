@@ -1,0 +1,228 @@
+
+/* ---------------------------------- */
+/* ==visual helpers                   */
+/* .. use them with parcimony !       */
+/* ---------------------------------- */
+/* blocks widths (percentage and pixels) */
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w33 {
+  width: 33.3333%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w66 {
+  width: 66.6666%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
+  width: 90%;
+}
+.w100 {
+  width: 100%;
+}
+.w50p {
+  width: 50px;
+}
+.w100p {
+  width: 100px;
+}
+.w150p {
+  width: 150px;
+}
+.w200p {
+  width: 200px;
+}
+.w300p {
+  width: 300px;
+}
+.w400p {
+  width: 400px;
+}
+.w500p {
+  width: 500px;
+}
+.w600p {
+  width: 600px;
+}
+.w700p {
+  width: 700px;
+}
+.w800p {
+  width: 800px;
+}
+.w960p {
+  width: 960px;
+}
+.mw960p {
+  max-width: 960px;
+}
+.w1140p {
+  width: 1140px;
+}
+.mw1140p {
+  max-width: 1140px;
+}
+.wauto {
+  width: auto;
+}
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l = all,top,right,bottom,left
+s,m,l,n = small, medium, large, none
+*/
+.man,
+.ma0 {
+  margin: 0;
+}
+.pan,
+.pa0 {
+  padding: 0;
+}
+.mas {
+  margin: 10px;
+}
+.mam {
+  margin: 20px;
+}
+.mal {
+  margin: 40px;
+}
+.pas {
+  padding: 10px;
+}
+.pam {
+  padding: 20px;
+}
+.pal {
+  padding: 40px;
+}
+.mtn,
+.mt0 {
+  margin-top: 0;
+}
+.mts {
+  margin-top: 10px;
+}
+.mtm {
+  margin-top: 20px;
+}
+.mtl {
+  margin-top: 40px;
+}
+.mrn,
+.mr0 {
+  margin-right: 0;
+}
+.mrs {
+  margin-right: 10px;
+}
+.mrm {
+  margin-right: 20px;
+}
+.mrl {
+  margin-right: 40px;
+}
+.mbn,
+.mb0 {
+  margin-bottom: 0;
+}
+.mbs {
+  margin-bottom: 10px;
+}
+.mbm {
+  margin-bottom: 20px;
+}
+.mbl {
+  margin-bottom: 40px;
+}
+.mln,
+.ml0 {
+  margin-left: 0;
+}
+.mls {
+  margin-left: 10px;
+}
+.mlm {
+  margin-left: 20px;
+}
+.mll {
+  margin-left: 40px;
+}
+.ptn,
+.pt0 {
+  padding-top: 0;
+}
+.pts {
+  padding-top: 10px;
+}
+.ptm {
+  padding-top: 20px;
+}
+.ptl {
+  padding-top: 40px;
+}
+.prn,
+.pr0 {
+  padding-right: 0;
+}
+.prs {
+  padding-right: 10px;
+}
+.prm {
+  padding-right: 20px;
+}
+.prl {
+  padding-right: 40px;
+}
+.pbn,
+.pb0 {
+  padding-bottom: 0;
+}
+.pbs {
+  padding-bottom: 10px;
+}
+.pbm {
+  padding-bottom: 20px;
+}
+.pbl {
+  padding-bottom: 40px;
+}
+.pln,
+.pl0 {
+  padding-left: 0;
+}
+.pls {
+  padding-left: 10px;
+}
+.plm {
+  padding-left: 20px;
+}
+.pll {
+  padding-left: 40px;
+}

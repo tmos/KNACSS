@@ -1,0 +1,33 @@
+/* CSS Next main file */
+/* ----------------- */
+
+/* (WARNING : you should comment this line and move config file from vendor/knacss folder to your own folder) */
+@import url("00-config.css");
+
+/* normalize include */
+@import url("01a-normalize.css"); /* normalize */
+
+/* Sass base styles */
+@import url("01b-base.css"); /* reset and basic styles */
+
+/* Sass files : chose the ones you need */
+@import url("02-layout.css"); /* alignment, modules, positionning */
+@import url("03-grids.css"); /* grids */
+@import url("04-tables.css"); /* data tables consistency */
+@import url("05-forms.css"); /* forms consistency */
+@import url("06-helpers.css"); /* width and spacers visually classes */
+@import url("07-responsive.css"); /* Responsive Web Design helpers */
+@import url("08-print.css"); /* print quick reset */
+@import url("09-misc.css"); /* skip links, google maps and hyphens */
+@import url("10-styling.css"); /* minor stylings */
+
+/* WordPress base styles */
+@import url("11-wordpress.css"); /* WordPress reset and basic styles */
+
+/* ----------------------------- */
+/* ==own stylesheet              */
+/* ----------------------------- */
+
+/* Here should go your own CSS styles */
+/* You can also link them with a Sass @import */
+/* @import url("my-styles.css"); */
