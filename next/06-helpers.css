@@ -1,96 +1,125 @@
-
 /* ---------------------------------- */
 /* ==visual helpers                   */
 /* .. use them with parcimony !       */
 /* ---------------------------------- */
+
 /* blocks widths (percentage and pixels) */
 .w10 {
-  width: 10%;
+	width: 10%;
 }
+
 .w20 {
-  width: 20%;
+	width: 20%;
 }
+
 .w25 {
-  width: 25%;
+	width: 25%;
 }
+
 .w30 {
-  width: 30%;
+	width: 30%;
 }
+
 .w33 {
-  width: 33.3333%;
+	width: 33.3333%;
 }
+
 .w40 {
-  width: 40%;
+	width: 40%;
 }
+
 .w50 {
-  width: 50%;
+	width: 50%;
 }
+
 .w60 {
-  width: 60%;
+	width: 60%;
 }
+
 .w66 {
-  width: 66.6666%;
+	width: 66.6666%;
 }
+
 .w70 {
-  width: 70%;
+	width: 70%;
 }
+
 .w75 {
-  width: 75%;
+	width: 75%;
 }
+
 .w80 {
-  width: 80%;
+	width: 80%;
 }
+
 .w90 {
-  width: 90%;
+	width: 90%;
 }
+
 .w100 {
-  width: 100%;
+	width: 100%;
 }
+
 .w50p {
-  width: 50px;
+	width: 50px;
 }
+
 .w100p {
-  width: 100px;
+	width: 100px;
 }
+
 .w150p {
-  width: 150px;
+	width: 150px;
 }
+
 .w200p {
-  width: 200px;
+	width: 200px;
 }
+
 .w300p {
-  width: 300px;
+	width: 300px;
 }
+
 .w400p {
-  width: 400px;
+	width: 400px;
 }
+
 .w500p {
-  width: 500px;
+	width: 500px;
 }
+
 .w600p {
-  width: 600px;
+	width: 600px;
 }
+
 .w700p {
-  width: 700px;
+	width: 700px;
 }
+
 .w800p {
-  width: 800px;
+	width: 800px;
 }
+
 .w960p {
-  width: 960px;
+	width: 960px;
 }
+
 .mw960p {
-  max-width: 960px;
+	max-width: 960px;
 }
+
 .w1140p {
-  width: 1140px;
+	width: 1140px;
 }
+
 .mw1140p {
-  max-width: 1140px;
+	max-width: 1140px;
 }
+
 .wauto {
-  width: auto;
+	width: auto;
 }
+
 /* spacing helpers
 p,m = padding,margin
 a,t,r,b,l = all,top,right,bottom,left
@@ -98,131 +127,170 @@ s,m,l,n = small, medium, large, none
 */
 .man,
 .ma0 {
-  margin: 0;
+	margin: 0;
 }
+
 .pan,
 .pa0 {
-  padding: 0;
+	padding: 0;
 }
+
 .mas {
-  margin: 10px;
+	margin: var(--small-value);
 }
+
 .mam {
-  margin: 20px;
+	margin: var(--medium-value);;
 }
+
 .mal {
-  margin: 40px;
+	margin: var(--large-value);;
 }
+
 .pas {
-  padding: 10px;
+	padding: var(--small-value);
 }
+
 .pam {
-  padding: 20px;
+	padding: var(--medium-value);;
 }
+
 .pal {
-  padding: 40px;
+	padding: var(--large-value);;
 }
+
 .mtn,
 .mt0 {
-  margin-top: 0;
+	margin-top: 0;
 }
+
 .mts {
-  margin-top: 10px;
+	margin-top: var(--small-value);
 }
+
 .mtm {
-  margin-top: 20px;
+	margin-top: var(--medium-value);;
 }
+
 .mtl {
-  margin-top: 40px;
+	margin-top: var(--large-value);;
 }
+
 .mrn,
 .mr0 {
-  margin-right: 0;
+	margin-right: 0;
 }
+
 .mrs {
-  margin-right: 10px;
+	margin-right: var(--small-value);
 }
+
 .mrm {
-  margin-right: 20px;
+	margin-right: var(--medium-value);;
 }
+
 .mrl {
-  margin-right: 40px;
+	margin-right: var(--large-value);;
 }
+
 .mbn,
 .mb0 {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
+
 .mbs {
-  margin-bottom: 10px;
+	margin-bottom: var(--small-value);
 }
+
 .mbm {
-  margin-bottom: 20px;
+	margin-bottom: var(--medium-value);;
 }
+
 .mbl {
-  margin-bottom: 40px;
+	margin-bottom: var(--large-value);;
 }
+
 .mln,
 .ml0 {
-  margin-left: 0;
+	margin-left: 0;
 }
+
 .mls {
-  margin-left: 10px;
+	margin-left: var(--small-value);
 }
+
 .mlm {
-  margin-left: 20px;
+	margin-left: var(--medium-value);;
 }
+
 .mll {
-  margin-left: 40px;
+	margin-left: var(--large-value);;
 }
+
 .ptn,
 .pt0 {
-  padding-top: 0;
+	padding-top: 0;
 }
+
 .pts {
-  padding-top: 10px;
+	padding-top: var(--small-value);
 }
+
 .ptm {
-  padding-top: 20px;
+	padding-top: var(--medium-value);;
 }
+
 .ptl {
-  padding-top: 40px;
+	padding-top: var(--large-value);;
 }
+
 .prn,
 .pr0 {
-  padding-right: 0;
+	padding-right: 0;
 }
+
 .prs {
-  padding-right: 10px;
+	padding-right: var(--small-value);
 }
+
 .prm {
-  padding-right: 20px;
+	padding-right: var(--medium-value);;
 }
+
 .prl {
-  padding-right: 40px;
+	padding-right: var(--large-value);;
 }
+
 .pbn,
 .pb0 {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
+
 .pbs {
-  padding-bottom: 10px;
+	padding-bottom: var(--small-value);
 }
+
 .pbm {
-  padding-bottom: 20px;
+	padding-bottom: var(--medium-value);;
 }
+
 .pbl {
-  padding-bottom: 40px;
+	padding-bottom: var(--large-value);;
 }
+
 .pln,
 .pl0 {
-  padding-left: 0;
+	padding-left: 0;
 }
+
 .pls {
-  padding-left: 10px;
+	padding-left: var(--small-value);
 }
+
 .plm {
-  padding-left: 20px;
+	padding-left: var(--medium-value);;
 }
+
 .pll {
-  padding-left: 40px;
+	padding-left: var(--large-value);;
 }
