@@ -7,9 +7,9 @@
 * Licence WTFPL http://www.wtfpl.net/
 */
 
-/* Config file and project variables */
+/* Variables */
 :root {
-	/* font sizes */ /* if "14px" then 1em = 14px */ /* equiv line-height 1.5 */ /* equiv "32px" */ /* equiv "28px" */ /* equiv "24px" */ /* equiv "20px" */ /* equiv "18px" */ /* equiv "16px" */
+	/* font sizes */ /* if "14" then 1em = 14px */ /* equiv line-height 1.5 */ /* equiv "32px" */ /* equiv "28px" */ /* equiv "24px" */ /* equiv "20px" */ /* equiv "18px" */ /* equiv "16px" */
 
 	/* font stacks */ /* common font */ /* headings font */ /* monospace font */ /* universal stack */
 
@@ -25,6 +25,10 @@
 
 	/*kna-namespace (default : null) */
 }
+
+/* Custom Selectors */
+
+/* Semantic Media Queries */ /* tiny screens media query (less than 480px) */ /* screens between 481px and 768px */ /* screens between 769px and 1024px */ /* screens between 1025px and 1280px */ /* screens higher than 1280px */ /* screens between 1281px and 1600px */ /* ultra large screens */ /* style adjustments for high density devices */
 
 /* normalize include */
 /*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
@@ -498,18 +502,18 @@ html {
 body {
   /* set body font-size in em (1.4em equiv "14px") */
   font-size: 1.4em;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 a {
-  color: #333333;
+  color: #333;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #000000;
+  color: #000;
 }
 /* font-sizing for content */
 p,
@@ -530,33 +534,39 @@ figure {
   margin-bottom: 0;
   line-height: 1.5;
 }
+
 h1,
 .h1-like {
   font-size: 32px;
   font-size: 3.2rem;
   font-family: Helvetica, Arial, sans-serif;
 }
+
 h2,
 .h2-like {
   font-size: 28px;
   font-size: 2.8rem;
   font-family: Helvetica, Arial, sans-serif;
 }
+
 h3,
 .h3-like {
   font-size: 24px;
   font-size: 2.4rem;
 }
+
 h4,
 .h4-like {
   font-size: 20px;
-  font-size: 2rem;
+  font-size: 2.0rem;
 }
+
 h5,
 .h5-like {
   font-size: 18px;
   font-size: 1.8rem;
 }
+
 h6,
 .h6-like {
   font-size: 16px;
@@ -585,7 +595,7 @@ kbd {
   /* IE fix */
   white-space: pre-line;
   white-space: pre-wrap;
-  font-family: Consolas, "DejaVu Sans Mono", Courier, monospace;
+  font-family: Consolas, DejaVu Sans Mono, Courier, monospace;
   line-height: normal;
 }
 em,
@@ -646,7 +656,7 @@ h4:first-child,
 h5:first-child,
 .h5-like:first-child,
 h6:first-child,
-.h6-like:first-child {
+.h6-like:first:first-child {
   margin-top: 0;
 }
 /* avoid margins on nested elements */

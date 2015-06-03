@@ -43,19 +43,17 @@ html {
 }
 body {
   /* set body font-size in em (1.4em equiv "14px") */
-  font-size: 1.4em;
-  background-color: #ffffff;
-  color: #000000;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-size: calc(var(--base-font-size) / 10)em;
+  background-color: var(--base-background);
+  color: var(--base-color);
+  font-family: var(--font-stack-common);
+  line-height: var(--line-height);
 }
 a {
-  color: #333333;
+  color: var(--base-color-link);
 }
-a:hover,
-a:focus,
-a:active {
-  color: #000000;
+a:--hover-focus-active {
+  color: var(--base-color-link-hover);
 }
 /* font-sizing for content */
 p,
@@ -74,33 +72,39 @@ details,
 figure {
   margin-top: 0.75em;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: var(--line-height);
 }
+
 h1,
 .h1-like {
-  font-size: 3.2rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-size: var(--h1-size);
+  font-family: var(--font-stack-headings);
 }
+
 h2,
 .h2-like {
-  font-size: 2.8rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-size: var(--h2-size);
+  font-family: var(--font-stack-headings);
 }
+
 h3,
 .h3-like {
-  font-size: 2.4rem;
+  font-size: var(--h3-size);
 }
+
 h4,
 .h4-like {
-  font-size: 2rem;
+  font-size: var(--h4-size);
 }
+
 h5,
 .h5-like {
-  font-size: 1.8rem;
+  font-size: var(--h5-size);
 }
+
 h6,
 .h6-like {
-  font-size: 1.6rem;
+  font-size: var(--h6-size);
 }
 /* alternate font-sizing */
 .smaller {
@@ -125,7 +129,7 @@ kbd {
   /* IE fix */
   white-space: pre-line;
   white-space: pre-wrap;
-  font-family: Consolas, "DejaVu Sans Mono", Courier, monospace;
+  font-family: var(--font-stack-monospace);
   line-height: normal;
 }
 em,
@@ -154,12 +158,12 @@ sup {
   overflow: hidden !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
 }
-@media (max-width: 768px) {
+@media (--small-screen) {
   .no-small-screen {
     display: none;
   }
 }
-@media (min-width: 1280px) {
+@media (--large-screen-inclusive) {
   .no-large-screen {
     display: none;
   }
@@ -168,25 +172,7 @@ sup {
 /* == browsers consistency       */
 /* ----------------------------- */
 /* avoid top margins on first content element */
-p:first-child,
-.p-like:first-child,
-ul:first-child,
-ol:first-child,
-dl:first-child,
-blockquote:first-child,
-pre:first-child,
-h1:first-child,
-.h1-like:first-child,
-h2:first-child,
-.h2-like:first-child,
-h3:first-child,
-.h3-like:first-child,
-h4:first-child,
-.h4-like:first-child,
-h5:first-child,
-.h5-like:first-child,
-h6:first-child,
-.h6-like:first-child {
+:--content-element:first-child {
   margin-top: 0;
 }
 /* avoid margins on nested elements */
@@ -212,5 +198,5 @@ svg {
 }
 /* margin-bottom on tables */
 table {
-  margin-bottom: 20px;
+  margin-bottom: var(--medium-value);
 }
