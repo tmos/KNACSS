@@ -1722,7 +1722,7 @@ s,m,l,n = small, medium, large, none
 	padding-left: 40px;;
 } /* width and spacers visually classes */
 /* ----------------------------- */
-/* ==desktop and HD devices			*/
+/* ==desktop and HD devices	     */
 /* ----------------------------- */
 @media (min-width: 1280px) {
 	/* rules for big resources and big screens like: background-images, font-faces, etc. */
@@ -1731,7 +1731,7 @@ s,m,l,n = small, medium, large, none
 	/* style adjustments for high density devices */
 }
 /* ---------------------------------- */
-/* ==Responsive large								 */
+/* ==Responsive large                 */
 /* ---------------------------------- */
 @media (min-width: 1280px) {
 	/* layouts for large screens */
@@ -1790,7 +1790,7 @@ s,m,l,n = small, medium, large, none
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive medium								*/
+/* ==Responsive medium                */
 /* ---------------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
 	/* layouts for medium screens */
@@ -1850,7 +1850,7 @@ s,m,l,n = small, medium, large, none
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive small								 */
+/* ==Responsive small                 */
 /* ---------------------------------- */
 @media (min-width: 481px) and (max-width: 768px) {
 	/* quick reset in small resolution and less */
@@ -1923,7 +1923,7 @@ s,m,l,n = small, medium, large, none
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive tiny									*/
+/* ==Responsive tiny                  */
 /* ---------------------------------- */
 @media (max-width: 480px) {
 	/* quick tiny resolution reset */
@@ -2025,417 +2025,633 @@ s,m,l,n = small, medium, large, none
 	}
 } /* Responsive Web Design helpers */
 /* quick print reset */
+
 @media print {
-  * {
-    background: transparent !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  body {
-    width: auto !important;
-    margin: auto !important;
-    font-family: serif;
-    font-size: 12pt;
-    background-color: #fff !important;
-    color: #333 !important;
-  }
-  p,
-  .p-like,
+    * {
+        text-shadow: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    body {
+        width: auto !important;
+        margin: auto !important;
+        font-family: serif;
+        font-size: 12pt;
+        color: #333 !important;
+        background-color: #fff !important;
+    }
+
+    p,
+    .p-like,
+    h1,
+    .h1-like,
+    h2,
+    .h2-like,
+    h3,
+    .h3-like,
+    h4,
+    .h4-like,
+    h5,
+    .h5-like,
+    h6,
+    .h6-like,
+    blockquote,
+    ul,
+    ol {
+        margin: auto !important;
+        color: #000 !important;
+    }
+
+    .print {
+        display: block;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    /* no orphans, no widows */
+
+    p,
+    .p-like,
+    blockquote {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* no breaks inside these elements */
+
+    blockquote,
+    ul,
+    ol {
+        page-break-inside: avoid;
+    }
+
+    /* page break before main headers
   h1,
-  .h1-like,
-  h2,
-  .h2-like,
-  h3,
-  .h3-like,
-  h4,
-  .h4-like,
-  h5,
-  .h5-like,
-  h6,
-  .h6-like,
-  blockquote,
-  ul,
-  ol {
-    color: #000 !important;
-    margin: auto !important;
+  .h1-like {
+    page-break-before: always;
   }
-  .print {
-    display: block;
-  }
-  .no-print {
-    display: none;
-  }
-  /* no orphans, no widows */
-  p,
-  .p-like,
-  blockquote {
-    orphans: 3;
-    widows: 3;
-  }
-  /* no breaks inside these elements */
-  blockquote,
-  ul,
-  ol {
-    page-break-inside: avoid;
-  }
-  /* page break before main headers
-	h1,
-	.h1-like {
-		page-break-before: always;
-	}
-	*/
-  /* no breaks after these elements */
-  h1,
-  .h1-like,
-  h2,
-  .h2-like,
-  h3,
-  .h3-like,
-  caption {
-    page-break-after: avoid;
-  }
-  a {
-    color: #000 !important;
-    text-decoration: underline !important;
-  }
-  /* displaying URLs */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
+  */
+
+    /* no breaks after these elements */
+
+    h1,
+    .h1-like,
+    h2,
+    .h2-like,
+    h3,
+    .h3-like,
+    caption {
+        page-break-after: avoid;
+    }
+
+    a {
+        text-decoration: underline !important;
+        color: #000 !important;
+    }
+
+    /* displaying URLs */
+
+    a[href]:after {
+        content: " (" attr(href) ") ";
+    }
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
 } /* print quick reset */
 /* ----------------------------- */
-/* ==misc rules                  */
+/* ==misc rules	                 */
 /* ----------------------------- */
+
 /* styling skip links */
+
 .skip-links {
-  position: absolute;
+		position: absolute;
 }
+
 .skip-links a {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0.5em;
-  background: black;
-  color: white;
-  text-decoration: none;
+		position: absolute;
+		padding: 0.5em;
+		overflow: hidden;
+		clip: rect(1px,1px,1px,1px);
+		text-decoration: none;
+		color: white;
+		background: black;
 }
+
 .skip-links a:focus {
-  position: static;
-  overflow: visible;
-  clip: auto;
+		position: static;
+		overflow: visible;
+		clip: auto;
 }
-@media (max-width: 768px) {
-  /* you shall not pass */
-  div,
-  textarea,
-  table,
-  td,
-  th,
-  code,
-  pre,
-  samp {
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-  }
+
+@media(max-width: 768px) {
+		div,
+		textarea,
+		table,
+		td,
+		th,
+		code,
+		pre,
+		samp {
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;
+				word-wrap: break-word;
+		}
 }
+
 /* Google Gmap3 bug fix on images */
+
 .gm-style img {
-  height: 100%;
+		height: 100%;
 }
+
 :not(.gm-style) img {
-  height: auto;
+		height: auto;
 }
+
 .gm-style img,
 .gmnoscreen img,
 .gmnoprint img {
-  max-width: none !important;
+		max-width: none !important;
 } /* skip links, google maps and hyphens */
 /* ----------------------------- */
 /* ==minor stylings              */
 /* ----------------------------- */
+
 /* styling elements */
 code,
 kbd,
 mark {
-  border-radius: 2px;
+		border-radius: 2px;
 }
+
 kbd {
-  padding: 0 2px;
-  border: 1px solid #999;
+		padding: 0 2px;
+		border: 1px solid #999;
 }
+
 code {
-  padding: 2px 4px;
-  background: #000000;
-  background: rgba(0, 0, 0, 0.04);
-  color: #b11;
+		padding: 2px 4px;
+		color: #b11;
+		background: #000000;
+		background: rgba(0,0,0,0.04);
 }
+
 pre code {
-  padding: none;
-  background: none;
-  color: inherit;
-  border-radius: 0;
+		padding: none;
+		border-radius: 0;
+		color: inherit;
+		background: none;
 }
+
 mark {
-  padding: 2px 4px;
-  background: #ff0;
+		padding: 2px 4px;
+		background: #ff0;
 }
+
 sup,
 sub {
-  vertical-align: 0;
-  position: relative;
+		position: relative;
+		vertical-align: 0;
 }
+
 sup {
-  bottom: 1ex;
+		bottom: 1ex;
 }
+
 sub {
-  top: 0.5ex;
+		top: 0.5ex;
 }
+
 blockquote {
-  position: relative;
-  padding-left: 3em;
+		position: relative;
+		padding-left: 3em;
 }
+
 blockquote:before {
-  content: "\201C";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-family: georgia, serif;
-  font-size: 5em;
-  line-height: 0.9;
-  color: #000000;
-  color: rgba(0, 0, 0, 0.3);
+		content: "\201C";
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-family: georgia,serif;
+		font-size: 5em;
+		line-height: 0.9;
+		color: #000000;
+		color: rgba(0,0,0,0.3);
 }
+
 blockquote > footer {
-  margin-top: .75em;
-  font-size: 0.9em;
-  color: #000000;
-  color: rgba(0, 0, 0, 0.7);
+		margin-top: .75em;
+		font-size: 0.9em;
+		color: #000000;
+		color: rgba(0,0,0,0.7);
 }
+
 blockquote > footer:before {
-  content: "\2014 \0020";
+		content: "\2014 \0020";
 }
+
 q {
-  font-style: normal;
+		font-style: normal;
 }
+
 q,
 .q {
-  quotes: "“\00a0" "\00a0”";
+		quotes: "“\00a0" "\00a0”";
 }
-q:lang(fr),
+
+q:lang(fr) ,
 .q:lang(fr) {
-  quotes: "«\00a0" "\00a0»";
+		quotes: "«\00a0" "\00a0»";
 }
+
 hr {
-  display: block;
-  clear: both;
-  height: 1px;
-  margin: 1em 0 2em;
-  padding: 0;
-  border: 0;
-  color: #ccc;
-  background-color: #ccc;
+		display: block;
+		clear: both;
+		height: 1px;
+		margin: 1em 0 2em;
+		padding: 0;
+		border: 0;
+		color: #ccc;
+		background-color: #ccc;
 }
+
 /* alternate tables */
 .table-alternate {
-  border: 0;
+		border: 0;
 }
+
 .table-alternate tbody {
-  border: 1px solid #ccc;
+		border: 1px solid #ccc;
 }
+
 .table-alternate thead tr > * + * {
-  border-left: 0;
+		border-left: 0;
 }
+
 .table-alternate tbody tr > * + * {
-  border-left: 1px solid #ccc;
+		border-left: 1px solid #ccc;
 }
+
 /* alternate-vert tables */
 .table-alternate-v {
-  border: 0;
-  border-right: 1px solid #ccc;
+		border: 0;
+		border-right: 1px solid #ccc;
 }
-.table-alternate-v tr > :first-child {
-  border-bottom: 0;
+
+.table-alternate-v tr >:first-child {
+		border-bottom: 0;
 }
+
 .table-alternate-v tr > * + * {
-  border-top: 1px solid #ccc;
+		border-top: 1px solid #ccc;
 }
+
 /* striped tables */
 .table-striped tbody tr:nth-child(odd) {
-  background: #eee;
-  background: rgba(0, 0, 0, 0.05);
+		background: #eee;
+		background: rgba(0,0,0,0.05);
 }
+
 /* striped-vert tables */
-.table-striped-v tr > :first-child {
-  background: #eee;
-  background: rgba(0, 0, 0, 0.05);
+.table-striped-v tr >:first-child {
+		background: #eee;
+		background: rgba(0,0,0,0.05);
 } /* minor stylings */
 
 /* WordPress base styles */
 /* ----------------------------- */
 /* ==WordPress reset             */
 /* ----------------------------- */
+
 /*
 Author: Geoffrey Crofte, Alsacréations
 Contributors: Automattic, Geoffrey Crofte
 Description: Reset styles for WordPress usage of KNACSS
 */
+
 /* ----------------------------- */
 /* ==Menus                       */
 /* ----------------------------- */
+
+/* current menu elements */
+.current_page_item > a {
+}
+.current-menu-item > a {
+}
+.current_page_ancestor > a {
+}
+
+/* blocks of content navigation */
 .comment-navigation,
 .paging-navigation,
 .post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
+		margin: 0 0 1.5em;
+		overflow: hidden;
 }
+
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
-  width: 50%;
+		float: left;
+		width: 50%;
 }
+
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
+		float: right;
+		width: 50%;
+		text-align: right;
 }
+
 /* ----------------------------- */
 /* ==Alignments                  */
 /* ----------------------------- */
+
+/* class in img elements */
 .alignnone {
-  margin: .25em 1.5em 1.5em 0;
+		margin: .25em 1.5em 1.5em 0;
 }
+
 .aligncenter {
-  clear: both;
-  display: block;
-  margin: 1.5em auto;
+		display: block;
+		clear: both;
+		margin: 1.5em auto;
 }
+
 .alignleft {
-  float: left;
-  margin: 0 1.5em .25em 0;
+		float: left;
+		margin: 0 1.5em .25em 0;
 }
+
 .alignright {
-  float: right;
-  margin: 0 0 .25em 1.5em;
+		float: right;
+		margin: 0 0 .25em 1.5em;
 }
+
 /* ----------------------------- */
 /* ==Clearings                   */
 /* ----------------------------- */
+
 .entry-content,
 .comment-content {
-  clear: both;
+		clear: both;
 }
+
 .entry-content:after,
 .comment-content:after,
 .entry-content:before,
 .comment-content:before {
-  content: "";
-  display: table;
+		content: "";
+		display: table;
 }
+
 /* ----------------------------- */
-/* ==Widgets                     */
+/* ==Widgets										 */
 /* ----------------------------- */
+
 .widget + .widget {
-  margin: 1.5em 0 0;
+		margin: 1.5em 0 0;
 }
+
+/* usage example: */
 .widget select {
-  max-width: 100%;
+		max-width: 100%;
 }
 /* ----------------------------- */
 /* ==Posts and pages             */
 /* ----------------------------- */
+
 /* === 5.1 Posts - post_class === */
+
+/* featured content */
+.sticky {
+
+}
+
+/* attachment post */
+.attachment {
+
+}
+
+/* format of post */
+.format-aside {
+
+}
+.format-gallery {
+
+}
+.format-link {
+
+}
+.format-image {
+
+}
+.format-quote {
+
+}
+.format-status {
+
+}
+.format-video {
+
+}
+.format-chat {
+
+}
+
+/* class for a tag */
+.tag-name-of-tag {
+
+}
+
+/* class for categorie */
+.category-name-of-category {
+  
+}
+
 /* === 5.2 Pages - body_class === */
+
+/* front page */
+.home.blog {
+  /* if display posts */
+
+}
+  
+.home.page {
+  /* if static page */
+
+}
+
+/* page displays posts */
+.blog.home {
+  /* if is frontpage */
+  
+}
+  
+.blog.page {
+  /* if static page */
+
+}
+
+/* simple page */
+.page {
+
+}
+
+/* page of single post */
+.single {
+
+}
+
+/* page of archives */
+.archive {
+
+}
+
+/* page of search  */
+.search  .search-results {
+  /* if has results */
+
+}
+  
+.search .search-no-results {
+  /* if has no results */
+
+}
+
+/* page 404 */
+.error404 {
+
+}
+
+/* user logged in */
+.logged-in {
+
+}
+
+/* text direction if right-to-left */
+/* prefer rtl.css: http://codex.wordpress.org/Right-to-Left_Language_Support /*/
+.rtl {
+
+}
+
 /* === 5.3 Posts and Pages - Contents === */
+
 .hentry {
   margin: 0 0 1.5em;
 }
+
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
+
 /* ----------------------------- */
-/* ==Comments                    */
+/* ==Comments										 */
 /* ----------------------------- */
+
 .comment-content a {
-  word-wrap: break-word;
+		word-wrap: break-word;
 }
+
+.bypostauthor {
+  /* some make-the-logo-bigger styles */
+}
+
 /* ----------------------------- */
-/* ==Media                       */
+/* ==Media											 */
 /* ----------------------------- */
+
 img.wp-smiley {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-  border: none;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		border: none;
 }
+
 /* ----------------------------- */
-/* ==Captions                    */
+/* ==Captions										 */
 /* ----------------------------- */
+
 .wp-caption {
-  max-width: 100%;
-  margin-bottom: 1.5em;
+		margin-bottom: 1.5em;
+		max-width: 100%;
 }
+
 .wp-caption img {
-  display: block;
-  margin: 0 auto;
+		display: block;
+		margin: 0 auto;
 }
+
 .wp-caption-text {
-  margin: 1em 0;
-  text-align: center;
+		margin: 1em 0;
+		text-align: center;
 }
+
 /* ----------------------------- */
-/* ==Galleries                   */
+/* ==Galleries									 */
 /* ----------------------------- */
+
 .gallery {
-  margin-bottom: 1.5em;
+		margin-bottom: 1.5em;
 }
+
 .gallery-item {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  vertical-align: top;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		vertical-align: top;
 }
+
 .gallery-columns-2 .gallery-item {
-  max-width: 50%;
+		max-width: 50%;
 }
+
 .gallery-columns-3 .gallery-item {
-  max-width: 33.33%;
+		max-width: 33.33%;
 }
+
 .gallery-columns-4 .gallery-item {
-  max-width: 25%;
+		max-width: 25%;
 }
+
 .gallery-columns-5 .gallery-item {
-  max-width: 20%;
+		max-width: 20%;
 }
+
 .gallery-columns-6 .gallery-item {
-  max-width: 16.66%;
+		max-width: 16.66%;
 }
+
 .gallery-columns-7 .gallery-item {
-  max-width: 14.28%;
+		max-width: 14.28%;
 }
+
 .gallery-columns-8 .gallery-item {
-  max-width: 12.5%;
+		max-width: 12.5%;
 }
+
 .gallery-columns-9 .gallery-item {
-  max-width: 11.11%;
+		max-width: 11.11%;
 }
+
 .gallery-caption {
-  display: block;
+		display: block;
 } /* WordPress reset and basic styles */
 
 /* ----------------------------- */

@@ -1,50 +1,55 @@
 /* ----------------------------- */
-/* ==misc rules                  */
+/* ==misc rules	                 */
 /* ----------------------------- */
+
 /* styling skip links */
+
 .skip-links {
-  position: absolute;
+		position: absolute;
 }
+
 .skip-links a {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0.5em;
-  background: black;
-  color: white;
-  text-decoration: none;
+		position: absolute;
+		padding: 0.5em;
+		overflow: hidden;
+		clip: rect(1px,1px,1px,1px);
+		text-decoration: none;
+		color: white;
+		background: black;
 }
+
 .skip-links a:focus {
-  position: static;
-  overflow: visible;
-  clip: auto;
+		position: static;
+		overflow: visible;
+		clip: auto;
 }
-@media (max-width: 768px) {
-  /* you shall not pass */
-  div,
-  textarea,
-  table,
-  td,
-  th,
-  code,
-  pre,
-  samp {
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-  }
+
+@media(--small-screen-and-less) {
+		div,
+		textarea,
+		table,
+		td,
+		th,
+		code,
+		pre,
+		samp {
+				hyphens: auto;
+				word-wrap: break-word;
+		}
 }
+
 /* Google Gmap3 bug fix on images */
+
 .gm-style img {
-  height: 100%;
+		height: 100%;
 }
+
 :not(.gm-style) img {
-  height: auto;
+		height: auto;
 }
+
 .gm-style img,
 .gmnoscreen img,
 .gmnoprint img {
-  max-width: none !important;
+		max-width: none !important;
 }

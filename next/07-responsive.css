@@ -1,6 +1,6 @@
 
 /* ----------------------------- */
-/* ==desktop and HD devices			*/
+/* ==desktop and HD devices	     */
 /* ----------------------------- */
 @media (--large-screen-and-more) {
 	/* rules for big resources and big screens like: background-images, font-faces, etc. */
@@ -9,7 +9,7 @@
 	/* style adjustments for high density devices */
 }
 /* ---------------------------------- */
-/* ==Responsive large								 */
+/* ==Responsive large                 */
 /* ---------------------------------- */
 @media (--large-screen-and-more) {
 	/* layouts for large screens */
@@ -68,7 +68,7 @@
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive medium								*/
+/* ==Responsive medium                */
 /* ---------------------------------- */
 @media (--medium-screen) {
 	/* layouts for medium screens */
@@ -128,7 +128,7 @@
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive small								 */
+/* ==Responsive small                 */
 /* ---------------------------------- */
 @media (--small-screen) {
 	/* quick reset in small resolution and less */
@@ -201,7 +201,7 @@
 	}
 }
 /* ---------------------------------- */
-/* ==Responsive tiny									*/
+/* ==Responsive tiny                  */
 /* ---------------------------------- */
 @media (--tiny-screen) {
 	/* quick tiny resolution reset */
