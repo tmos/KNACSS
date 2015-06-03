@@ -197,12 +197,12 @@ sup {
 	overflow: hidden !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
 }
-@media (--small-screen) {
+@media (--small-screen-and-less) {
 	.no-small-screen {
 		display: none;
 	}
 }
-@media (--large-screen-inclusive) {
+@media (--large-screen-and-more) {
 	.no-large-screen {
 		display: none;
 	}

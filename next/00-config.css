@@ -75,18 +75,12 @@
 /* tiny screens (less than 480px) */
 @custom-media --tiny-screen (width <= 480px);
 /* tiny screens for grids */
-@custom-media --tiny-screen-explicit (width >= 481px) and (width <= 768px);
+@custom-media --small-screen (width >= 481px) and (width <= 768px);
 /* screens between 481px and 768px */
-@custom-media --small-screen (width <= 768px);
+@custom-media --small-screen-and-less (width <= 768px);
 /* screens between 769px and 1024px */
-@custom-media --medium-screen (width <= 1024px);
-/* screens between 1025px and 1280px */
-@custom-media --large-screen (width <= 1280px);
+@custom-media --medium-screen (width >= 769px) and (width <= 1024px);
 /* screens higher than 1280px */
-@custom-media --large-screen-inclusive (width >= 1280px);
-/* screens between 1281px and 1600px */
-@custom-media --extra-large-screen (width <= 1600px);
-/* ultra large screens */
-@custom-media --ultra-large-screen (width <= 1920px);
+@custom-media --large-screen-and-more (width >= 1280px);
 /* high density devices */
 @custom-media --hdpi (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx);
