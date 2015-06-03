@@ -1,60 +1,69 @@
 
 /* ----------------------------- */
-/* == soft reset                 */
+/* == soft reset								 */
 /* ----------------------------- */
+
 /* switching to border-box model for all elements */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 ul,
 ol {
-  padding-left: 2em;
+	padding-left: 2em;
 }
 ul.unstyled {
-  list-style: none;
+	list-style: none;
 }
 img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
+
 /* height auto only for non SVG images */
 img:not([src$=".svg"]) {
-  height: auto;
+	height: auto;
 }
 blockquote,
 figure {
-  margin-left: 0;
-  margin-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
+
 /* ----------------------------- */
-/* == typography                 */
+/* == typography								 */
 /* ----------------------------- */
+
 html {
-  /* set base font-size to equiv "10px", which is adapted to rem unit */
-  font-size: 62.5%;
-  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-  /* thanks to @guardian, @victorbritopro and @eQRoeil */
-  font-size: calc(1em * .625);
-  /* disallow text zooming on orientation change (non standard property) */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+
+	/* set base font-size to equiv "10px", which is adapted to rem unit */
+	font-size: 62.5%;
+
+	/* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+	/* thanks to @guardian, @victorbritopro and @eQRoeil */
+	font-size: calc(1em * .625);
+
+	/* disallow text zooming on orientation change (non standard property) */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 body {
-  /* set body font-size in em (1.4em equiv "14px") */
-  font-size: calc(var(--base-font-size) / 10)em;
-  background-color: var(--base-background);
-  color: var(--base-color);
-  font-family: var(--font-stack-common);
-  line-height: var(--line-height);
+
+	/* set body font-size in em (1.4em equiv "14px") */
+	font-size: calc(var(--base-font-size) / 10)em;
+	background-color: var(--base-background);
+	color: var(--base-color);
+	font-family: var(--font-stack-common);
+	line-height: var(--line-height);
 }
 a {
-  color: var(--base-color-link);
+	color: var(--base-color-link);
 }
 a:--hover-focus-active {
-  color: var(--base-color-link-hover);
+	color: var(--base-color-link-hover);
 }
+
 /* font-sizing for content */
 p,
 .p-like,
@@ -70,67 +79,68 @@ textarea,
 caption,
 details,
 figure {
-  margin-top: 0.75em;
-  margin-bottom: 0;
-  line-height: var(--line-height);
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	line-height: var(--line-height);
 }
 
 h1,
 .h1-like {
-  font-size: var(--h1-size);
-  font-family: var(--font-stack-headings);
+	font-size: var(--h1-size);
+	font-family: var(--font-stack-headings);
 }
 
 h2,
 .h2-like {
-  font-size: var(--h2-size);
-  font-family: var(--font-stack-headings);
+	font-size: var(--h2-size);
+	font-family: var(--font-stack-headings);
 }
 
 h3,
 .h3-like {
-  font-size: var(--h3-size);
+	font-size: var(--h3-size);
 }
 
 h4,
 .h4-like {
-  font-size: var(--h4-size);
+	font-size: var(--h4-size);
 }
 
 h5,
 .h5-like {
-  font-size: var(--h5-size);
+	font-size: var(--h5-size);
 }
 
 h6,
 .h6-like {
-  font-size: var(--h6-size);
+	font-size: var(--h6-size);
 }
+
 /* alternate font-sizing */
 .smaller {
-  font-size: 0.6em;
+	font-size: 0.6em;
 }
 .small {
-  font-size: 0.8em;
+	font-size: 0.8em;
 }
 .big {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
 .bigger {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 .biggest {
-  font-size: 2em;
+	font-size: 2em;
 }
 code,
 pre,
 samp,
 kbd {
-  /* IE fix */
-  white-space: pre-line;
-  white-space: pre-wrap;
-  font-family: var(--font-stack-monospace);
-  line-height: normal;
+	/* IE fix */
+	white-space: pre-line;
+	white-space: pre-wrap;
+	font-family: var(--font-stack-monospace);
+	line-height: normal;
 }
 em,
 .italic,
@@ -138,50 +148,55 @@ address,
 cite,
 i,
 var {
-  font-style: italic;
+	font-style: italic;
 }
 small,
 sub,
 sup {
-  font-size: smaller;
+	font-size: smaller;
 }
+
 /* ----------------------------- */
-/* == hiding content             */
+/* == hiding content						 */
 /* ----------------------------- */
+
 /* hidden but not for an assistive technology like a screen reader, Yahoo! method */
 .visually-hidden {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
+	position: absolute !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
 }
 @media (--small-screen) {
-  .no-small-screen {
-    display: none;
-  }
+	.no-small-screen {
+		display: none;
+	}
 }
 @media (--large-screen-inclusive) {
-  .no-large-screen {
-    display: none;
-  }
+	.no-large-screen {
+		display: none;
+	}
 }
+
 /* ----------------------------- */
-/* == browsers consistency       */
+/* == browsers consistency			 */
 /* ----------------------------- */
+
 /* avoid top margins on first content element */
 :--content-element:first-child {
-  margin-top: 0;
+	margin-top: 0;
 }
+
 /* avoid margins on nested elements */
 li p,
 li .p-like,
 li ul,
 li ol {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 /* max values */
 img,
@@ -194,9 +209,10 @@ textarea,
 input,
 video,
 svg {
-  max-width: 100%;
+	max-width: 100%;
 }
+
 /* margin-bottom on tables */
 table {
-  margin-bottom: var(--medium-value);
+	margin-bottom: var(--medium-value);
 }

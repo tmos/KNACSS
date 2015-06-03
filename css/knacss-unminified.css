@@ -7,7 +7,9 @@
 * Licence WTFPL http://www.wtfpl.net/
 */
 
-/* Variables */
+/* ---------------------------------- */
+/* ==Variables                        */
+/* ---------------------------------- */
 :root {
 	/* font sizes */ /* if "14" then 1em = 14px */ /* equiv line-height 1.5 */ /* equiv "32px" */ /* equiv "28px" */ /* equiv "24px" */ /* equiv "20px" */ /* equiv "18px" */ /* equiv "16px" */
 
@@ -26,9 +28,23 @@
 	/*kna-namespace (default : null) */
 }
 
-/* Custom Selectors */
+/* ---------------------------------- */
+/* ==Custom selectors                 */
+/* ---------------------------------- */
 
-/* Semantic Media Queries */ /* tiny screens media query (less than 480px) */ /* screens between 481px and 768px */ /* screens between 769px and 1024px */ /* screens between 1025px and 1280px */ /* screens higher than 1280px */ /* screens between 1281px and 1600px */ /* ultra large screens */ /* style adjustments for high density devices */
+/* ---------------------------------- */
+/* ==Semantic Media Queries           */
+/* ---------------------------------- */
+
+/* tiny screens (less than 480px) */
+/* tiny screens for grids */
+/* screens between 481px and 768px */
+/* screens between 769px and 1024px */
+/* screens between 1025px and 1280px */
+/* screens higher than 1280px */
+/* screens between 1281px and 1600px */
+/* ultra large screens */
+/* high density devices */
 
 /* normalize include */
 /*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
@@ -458,63 +474,72 @@ th {
 
 /* Sass base styles */
 /* ----------------------------- */
-/* == soft reset                 */
+/* == soft reset								 */
 /* ----------------------------- */
+
 /* switching to border-box model for all elements */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 ul,
 ol {
-  padding-left: 2em;
+	padding-left: 2em;
 }
 ul.unstyled {
-  list-style: none;
+	list-style: none;
 }
 img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
+
 /* height auto only for non SVG images */
 img:not([src$=".svg"]) {
-  height: auto;
+	height: auto;
 }
 blockquote,
 figure {
-  margin-left: 0;
-  margin-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
+
 /* ----------------------------- */
-/* == typography                 */
+/* == typography								 */
 /* ----------------------------- */
+
 html {
-  /* set base font-size to equiv "10px", which is adapted to rem unit */
-  font-size: 62.5%;
-  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-  /* thanks to @guardian, @victorbritopro and @eQRoeil */
-  font-size: 0.625em;
-  /* disallow text zooming on orientation change (non standard property) */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+
+	/* set base font-size to equiv "10px", which is adapted to rem unit */
+	font-size: 62.5%;
+
+	/* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+	/* thanks to @guardian, @victorbritopro and @eQRoeil */
+	font-size: 0.625em;
+
+	/* disallow text zooming on orientation change (non standard property) */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 body {
-  /* set body font-size in em (1.4em equiv "14px") */
-  font-size: 1.4em;
-  background-color: #fff;
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+
+	/* set body font-size in em (1.4em equiv "14px") */
+	font-size: 1.4em;
+	background-color: #fff;
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
 }
 a {
-  color: #333;
+	color: #333;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #000;
+	color: #000;
 }
+
 /* font-sizing for content */
 p,
 .p-like,
@@ -530,73 +555,74 @@ textarea,
 caption,
 details,
 figure {
-  margin-top: 0.75em;
-  margin-bottom: 0;
-  line-height: 1.5;
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	line-height: 1.5;
 }
 
 h1,
 .h1-like {
-  font-size: 32px;
-  font-size: 3.2rem;
-  font-family: Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	font-size: 3.2rem;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 h2,
 .h2-like {
-  font-size: 28px;
-  font-size: 2.8rem;
-  font-family: Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 h3,
 .h3-like {
-  font-size: 24px;
-  font-size: 2.4rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 h4,
 .h4-like {
-  font-size: 20px;
-  font-size: 2.0rem;
+	font-size: 20px;
+	font-size: 2.0rem;
 }
 
 h5,
 .h5-like {
-  font-size: 18px;
-  font-size: 1.8rem;
+	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 h6,
 .h6-like {
-  font-size: 16px;
-  font-size: 1.6rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 }
+
 /* alternate font-sizing */
 .smaller {
-  font-size: 0.6em;
+	font-size: 0.6em;
 }
 .small {
-  font-size: 0.8em;
+	font-size: 0.8em;
 }
 .big {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
 .bigger {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 .biggest {
-  font-size: 2em;
+	font-size: 2em;
 }
 code,
 pre,
 samp,
 kbd {
-  /* IE fix */
-  white-space: pre-line;
-  white-space: pre-wrap;
-  font-family: Consolas, DejaVu Sans Mono, Courier, monospace;
-  line-height: normal;
+	/* IE fix */
+	white-space: pre-line;
+	white-space: pre-wrap;
+	font-family: Consolas, DejaVu Sans Mono, Courier, monospace;
+	line-height: normal;
 }
 em,
 .italic,
@@ -604,39 +630,43 @@ address,
 cite,
 i,
 var {
-  font-style: italic;
+	font-style: italic;
 }
 small,
 sub,
 sup {
-  font-size: smaller;
+	font-size: smaller;
 }
+
 /* ----------------------------- */
-/* == hiding content             */
+/* == hiding content						 */
 /* ----------------------------- */
+
 /* hidden but not for an assistive technology like a screen reader, Yahoo! method */
 .visually-hidden {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
+	position: absolute !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
 }
 @media (max-width: 768px) {
-  .no-small-screen {
-    display: none;
-  }
+	.no-small-screen {
+		display: none;
+	}
 }
 @media (min-width: 1280px) {
-  .no-large-screen {
-    display: none;
-  }
+	.no-large-screen {
+		display: none;
+	}
 }
+
 /* ----------------------------- */
-/* == browsers consistency       */
+/* == browsers consistency			 */
 /* ----------------------------- */
+
 /* avoid top margins on first content element */
 p:first-child,
 .p-like:first-child,
@@ -657,15 +687,16 @@ h5:first-child,
 .h5-like:first-child,
 h6:first-child,
 .h6-like:first:first-child {
-  margin-top: 0;
+	margin-top: 0;
 }
+
 /* avoid margins on nested elements */
 li p,
 li .p-like,
 li ul,
 li ol {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 /* max values */
 img,
@@ -678,459 +709,572 @@ textarea,
 input,
 video,
 svg {
-  max-width: 100%;
+	max-width: 100%;
 }
+
 /* margin-bottom on tables */
 table {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 } /* reset and basic styles */
 
 /* Sass files : chose the ones you need */
 /* ----------------------------- */
-/* ==layout and modules          */
+/* ==layout and modules					*/
 /* ----------------------------- */
+
 /* module, gains superpower "BFC" Block Formating Context */
 .mod {
-  overflow: hidden;
+	overflow: hidden;
 }
+
 /* blocks that needs to be placed under floats */
 .clear,
 .line,
 .row {
-  clear: both;
+	clear: both;
 }
+
 /* blocks that must contain floats */
 .clearfix:after,
 .line:after {
-  content: "";
-  display: table;
-  clear: both;
-  border-collapse: collapse;
+	content: "";
+	display: table;
+	clear: both;
+	border-collapse: collapse;
 }
+
 /* simple blocks alignment */
 .left {
-  margin-right: auto;
+	margin-right: auto;
 }
 .right {
-  margin-left: auto;
+	margin-left: auto;
 }
 .center {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 /* text and contents alignment */
 .txtleft {
-  text-align: left;
+	text-align: left;
 }
 .txtright {
-  text-align: right;
+	text-align: right;
 }
 .txtcenter {
-  text-align: center;
+	text-align: center;
 }
+
 /* floating elements */
 .fl {
-  float: left;
+	float: left;
 }
 img.fl {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 .fr {
-  float: right;
+	float: right;
 }
 img.fr {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 img.fl,
 img.fr {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
+
 /* table layout */
 .row {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 }
 .row > *,
 .col {
-  display: table-cell;
-  vertical-align: top;
+	display: table-cell;
+	vertical-align: top;
 }
+
 /* no table-cell for script tag when body is a .row */
 body > script {
-  display: none !important;
+	display: none !important;
 }
+
 /* inline-block */
 .inbl {
-  display: inline-block;
-  vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
+
 /* flexbox layout
 http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 */
+
 [class*="flex-container"] {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+	display : -webkit-box;
+	display : -webkit-flex;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
+
 .flex-container-h {
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
+
 .flex-container-v {
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
+
 .flex-item-fluid {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          -webkit-box-flex: 1;
-          flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
+
 .flex-item-first {
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          -webkit-box-ordinal-group: 0;
-          order: -1;
+	-webkit-box-ordinal-group : 0;
+	-webkit-order : -1;
+	    -ms-flex-order : -1;
+	        order : -1;
 }
+
 .flex-item-medium {
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          -webkit-box-ordinal-group: 1;
-          order: 0;
+	-webkit-box-ordinal-group : 1;
+	-webkit-order : 0;
+	    -ms-flex-order : 0;
+	        order : 0;
 }
+
 .flex-item-last {
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          -webkit-box-ordinal-group: 2;
-          order: 1;
+	-webkit-box-ordinal-group : 2;
+	-webkit-order : 1;
+	    -ms-flex-order : 1;
+	        order : 1;
 }
+
 .flex-item-center {
-  margin: auto;
+	margin: auto;
 } /* alignment, modules, positionning */
 /* ---------------------------------- */
-/* ==Grids                            */
+/* ==Grids														*/
 /* ---------------------------------- */
+
+/* WARNING : KNACSS grids are flexbox based and only supported by IE10+
+/* Tuto : http://www.alsacreations.com/tuto/lire/1659-une-grille-responsive-avec-flexbox-et-LESS.html
+/* Demo : http://codepen.io/raphaelgoetter/pen/ZYjwEB */
+
+/* Usage in vanilla CSS: */
+/* - <div class="grid-4"> for an equal fourth columns grid container */
+/* - <div class="grid-2-1"> for an uneven columns grid container */
+
+/* Usage with preprocessors : if you're using Sass, you can config grids variables : */
+/* n = number of columns (default = 4) / g = gutter value (default = var(--gutter)) */
+/* example : .grid-perso { @include grid(12, 10px); } */
+/* ... or uneven grids : */
+/* left = left ratio column (default = 2) / right = right ratio column (default = 1) / gutter (default = var(--gutter)) */
+/* example : .grid-perso { @include uneven-grid(2, 1, 10px); } */
+
 [class*="grid-"] {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -1em;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin-left: -1em;
 }
+
 [class*="grid-"] > * {
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          -webkit-box-flex: 0;
-          flex: 0 0 auto;
-  display: block;
-  /* IE fix */
-  width: calc(100% * 1 / 4 - 1em);
-  margin-left: 1em;
+	display: block;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(100% * 1 / 4 - 1em);
+	margin-left: 1em;
 }
+
 .grid-2 > * {
-  width: calc(100% * 1 / 2 - 1em);
+	width: calc(100% * 1 / 2 - 1em);
 }
+
 .grid-2 > .flex-item-double {
-  width: calc(100% * 2 / 2 - 1em);
+	width: calc(100% * 2 / 2 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-2 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-2 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-2 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-2 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-2 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-2 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-2 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-2 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-3 > * {
-  width: calc(100% * 1 / 3 - 1em);
+	width: calc(100% * 1 / 3 - 1em);
 }
+
 .grid-3 > .flex-item-double {
-  width: calc(100% * 2 / 3 - 1em);
+	width: calc(100% * 2 / 3 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-3 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-3 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-3 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-3 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-3 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-3 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-3 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-3 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-4 > * {
-  width: calc(100% * 1 / 4 - 1em);
+	width: calc(100% * 1 / 4 - 1em);
 }
+
 .grid-4 > .flex-item-double {
-  width: calc(100% * 2 / 4 - 1em);
+	width: calc(100% * 2 / 4 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-4 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-4 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-4 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-4 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-4 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-4 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-4 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-4 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-5 > * {
-  width: calc(100% * 1 / 5 - 1em);
+	width: calc(100% * 1 / 5 - 1em);
 }
+
 .grid-5 > .flex-item-double {
-  width: calc(100% * 2 / 5 - 1em);
+	width: calc(100% * 2 / 5 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-5 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-5 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-5 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-5 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-5 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-5 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-5 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-5 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-6 > * {
-  width: calc(100% * 1 / 6 - 1em);
+	width: calc(100% * 1 / 6 - 1em);
 }
+
 .grid-6 > .flex-item-double {
-  width: calc(100% * 2 / 6 - 1em);
+	width: calc(100% * 2 / 6 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-6 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-6 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-6 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-6 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-6 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-6 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-6 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-6 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-7 > * {
-  width: calc(100% * 1 / 7 - 1em);
+	width: calc(100% * 1 / 7 - 1em);
 }
+
 .grid-7 > .flex-item-double {
-  width: calc(100% * 2 / 7 - 1em);
+	width: calc(100% * 2 / 7 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-7 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-7 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-7 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-7 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-7 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-7 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-7 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-7 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-8 > * {
-  width: calc(100% * 1 / 8 - 1em);
+	width: calc(100% * 1 / 8 - 1em);
 }
+
 .grid-8 > .flex-item-double {
-  width: calc(100% * 2 / 8 - 1em);
+	width: calc(100% * 2 / 8 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-8 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-8 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-8 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-8 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-8 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-8 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-8 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-8 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-10 > * {
-  width: calc(100% * 1 / 10 - 1em);
+	width: calc(100% * 1 / 10 - 1em);
 }
+
 .grid-10 > .flex-item-double {
-  width: calc(100% * 2 / 10 - 1em);
+	width: calc(100% * 2 / 10 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-10 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-10 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-10 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-10 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-10 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-10 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-10 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-10 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-12 > * {
-  width: calc(100% * 1 / 12 - 1em);
+	width: calc(100% * 1 / 12 - 1em);
 }
+
 .grid-12 > .flex-item-double {
-  width: calc(100% * 2 / 12 - 1em);
+	width: calc(100% * 2 / 12 - 1em);
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-12 > * {
-    width: calc(100% * 1 / 2 - 1em);
-  }
-  .grid-12 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(min-width: 481px) and (max-width: 768px) {
+	.grid-12 > * {
+		width: calc(100% * 1 / 2 - 1em);
+	}
+	
+	.grid-12 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
-@media (max-width: 480px) {
-  .grid-12 > * {
-    width: calc(100% - 1em);
-  }
-  .grid-12 > .flex-item-double {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-12 > * {
+		width: calc(100% - 1em);
+	}
+	
+	.grid-12 > .flex-item-double {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-2-1 > *:nth-child(odd) {
-  width: calc(66.66666666666666% - 1em);
+	width: calc(66.66666666666666% - 1em);
 }
+
 .grid-2-1 > *:nth-child(even) {
-  width: calc(33.33333333333333% - 1em);
+	width: calc(33.33333333333333% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-2-1 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-2-1 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-1-2 > *:nth-child(odd) {
-  width: calc(33.33333333333333% - 1em);
+	width: calc(33.33333333333333% - 1em);
 }
+
 .grid-1-2 > *:nth-child(even) {
-  width: calc(66.66666666666666% - 1em);
+	width: calc(66.66666666666666% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-1-2 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-1-2 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-3-1 > *:nth-child(odd) {
-  width: calc(75% - 1em);
+	width: calc(75% - 1em);
 }
+
 .grid-3-1 > *:nth-child(even) {
-  width: calc(25% - 1em);
+	width: calc(25% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-3-1 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-3-1 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-1-3 > *:nth-child(odd) {
-  width: calc(25% - 1em);
+	width: calc(25% - 1em);
 }
+
 .grid-1-3 > *:nth-child(even) {
-  width: calc(75% - 1em);
+	width: calc(75% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-1-3 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-1-3 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-3-2 > *:nth-child(odd) {
-  width: calc(60% - 1em);
+	width: calc(60% - 1em);
 }
+
 .grid-3-2 > *:nth-child(even) {
-  width: calc(40% - 1em);
+	width: calc(40% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-3-2 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-3-2 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-2-3 > *:nth-child(odd) {
-  width: calc(40% - 1em);
+	width: calc(40% - 1em);
 }
+
 .grid-2-3 > *:nth-child(even) {
-  width: calc(60% - 1em);
+	width: calc(60% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-2-3 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-2-3 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-4-1 > *:nth-child(odd) {
-  width: calc(80% - 1em);
+	width: calc(80% - 1em);
 }
+
 .grid-4-1 > *:nth-child(even) {
-  width: calc(20% - 1em);
+	width: calc(20% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-4-1 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-4-1 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 }
+
 .grid-1-4 > *:nth-child(odd) {
-  width: calc(20% - 1em);
+	width: calc(20% - 1em);
 }
+
 .grid-1-4 > *:nth-child(even) {
-  width: calc(80% - 1em);
+	width: calc(80% - 1em);
 }
-@media (max-width: 480px) {
-  .grid-1-4 > *:nth-child(n) {
-    width: calc(100% - 1em);
-  }
+
+@media(max-width: 480px) {
+	.grid-1-4 > *:nth-child(n) {
+		width: calc(100% - 1em);
+	}
 } /* grids */
 /* ----------------------------- */
 /* ==tables                      */
