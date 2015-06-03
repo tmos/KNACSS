@@ -1,97 +1,110 @@
+@custom-selector :--forms-buttons
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]
+;
+
+@custom-selector :--webkit-search
+  ::-webkit-search-decoration,
+  ::-webkit-search-cancel-button,
+  ::-webkit-search-results-button,
+  ::-webkit-search-results-decoration
+;
 
 /* ----------------------------- */
 /* ==forms                       */
 /* ----------------------------- */
+
 /* thanks to HTML5boilerplate,
 * github.com/nathansmith/formalize and www.sitepen.com
 */
+
 /* buttons */
 .btn {
-  display: inline-block;
+	display: inline-block;
 }
+
 /* forms items */
 form,
 fieldset {
-  border: none;
+	border: none;
 }
+
 input,
 button,
 select,
 label,
 .btn {
-  vertical-align: middle;
-  font-family: inherit;
-  font-size: inherit;
+	vertical-align: middle;
+	font-family: inherit;
+	font-size: inherit;
 }
+
 button,
 input,
 optgroup,
 select,
 textarea {
-  color: #000000;
+	color: var(--base-color);
 }
+
 label {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
 }
+
 legend {
-  border: 0;
-  white-space: normal;
+	border: 0;
+	white-space: normal;
 }
+
 textarea {
-  min-height: 5em;
-  vertical-align: top;
-  font-family: inherit;
-  font-size: inherit;
-  resize: vertical;
+	min-height: 5em;
+	vertical-align: top;
+	font-family: inherit;
+	font-size: inherit;
+	resize: vertical;
 }
+
 /* if select styling bugs on WebKit */
 /* select { -webkit-appearance: none; } */
+
 /* 'x' appears on right of search input when text is entered. This removes it */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+input[type="search"]:--webkit-search {
+	display: none;
 }
+
 ::-webkit-input-placeholder {
-  color: #777;
+	color: #777;
 }
+
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #777;
+	color: #777;
 }
+
 .btn:focus,
 input[type="button"]:focus,
 button:focus {
-  outline: 0;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	outline: 0;
+	user-select: none;
 }
+
 /* unstyled forms */
-button.unstyled,
-input[type="button"].unstyled,
-input[type="submit"].unstyled,
-input[type="reset"].unstyled {
-  padding: 0;
-  border: none;
-  line-height: 1;
-  text-align: left;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+:--forms-buttons.unstyled {
+	padding: 0;
+	border: none;
+	line-height: 1;
+	text-align: left;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	appearance: none;
 }
-button.unstyled:focus,
-input[type="button"].unstyled:focus,
-input[type="submit"].unstyled:focus,
-input[type="reset"].unstyled:focus {
-  box-shadow: none;
-  outline: none;
+
+:--forms-buttons.unstyled:focus {
+	box-shadow: none;
+	outline: none;
 }

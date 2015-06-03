@@ -1,6 +1,33 @@
+@custom-selector :--hover-focus-active
+	:hover,
+	:focus,
+	:active
+;
+
+@custom-selector :--content-element
+	p,
+	.p-like,
+	ul,
+	ol,
+	dl,
+	blockquote,
+	pre,
+	h1,
+	.h1-like,
+	h2,
+	.h2-like,
+	h3,
+	.h3-like,
+	h4,
+	.h4-like,
+	h5,
+	.h5-like,
+	h6,
+	.h6-like:first
+;
 
 /* ----------------------------- */
-/* == soft reset								 */
+/* == soft reset                 */
 /* ----------------------------- */
 
 /* switching to border-box model for all elements */
